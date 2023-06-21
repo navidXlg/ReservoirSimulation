@@ -1,0 +1,31 @@
+ 'RESTART '           9 'CHAR'
+ '        ' '        ' '        ' '        ' '        ' '        ' '        '
+ '        ' '        '
+ 'DIMENS  '           6 'INTE'
+           2          15          15           1           0          -1
+ 'KEYWORDS'           2 'CHAR'
+ 'TIME    ' 'YEARS   '
+ 'WGNAMES '           2 'CHAR'
+ ':+:+:+:+' ':+:+:+:+'
+ 'NUMS    '           2 'INTE'
+      -32767      -32767
+ 'MEASRMNT'          12 'CHAR'
+ 'O:Simula' 'tionTime' '        ' '        ' '        ' '        ' 'E:Coarse'
+ ' time   ' '        ' '        ' '        ' '        '
+ 'UNITS   '           2 'CHAR'
+ '  DAYS  ' 'YEARS   '
+ 'STARTDAT'           3 'INTE'
+          20           1        1982
+ 'RUNTIMEI'          50 'INTE'
+           2           0          73        2023           6           4
+           1          51          55        2023           6           4
+           1          51          55          20           1        1984
+           2          79           1           7           0           0
+           0           0           3           1           1           1
+           0           0           0           0           2           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0
+ 'RUNTIMED'           5 'DOUB'
+   0.73000000000000D+03   0.11210000000000D+01   0.11210000000000D+01
+   0.00000000000000D+00   0.00000000000000D+00

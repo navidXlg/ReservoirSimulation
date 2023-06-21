@@ -1,0 +1,518 @@
+<eclipse>
+<message source="eclrun" date="" time="0">
+Executing ECLIPSE on pc system with  architecture named DESKTOP-LEUERN8
+</message>
+<message source="eclrun" date="" time="0">
+Process ID is 10264
+</message>
+<message source="eclrun" date="" time="0">
+Executing ECLIPSE on pc system with  architecture named DESKTOP-LEUERN8
+</message>
+<message source="eclrun" date="" time="0">
+Process ID is 10264
+</message>
+<message source="eclrun" date="" time="0">
+Simulation has finished.
+</message>
+<message source="eclrun" date="" time="0">
+Executing ECLIPSE on pc system with  architecture named DESKTOP-LEUERN8
+</message>
+<message source="eclrun" date="" time="0">
+Process ID is 10264
+</message>
+<message source="eclrun" date="" time="0">
+Simulation has finished.
+</message>
+<warning date="20/1/1982" time="0.00000000000000">
+ THE NUMBER OF WELLS HAS BEEN DEFAULTED TO ZERO                          
+ USING KEYWORD WELLDIMS IN THE RUNSPEC SECTION                           
+ OR NO WELLS WERE FOUND IN THE SCHEDULE SECTION                          
+</warning>
+<message date="20/1/1982" time="0.00000000000000">
+ CHECKING FOR LICENSES                                                   
+</message>
+<message date="20/1/1982" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS                      
+     102776 BYTES                                                        
+</message>
+<message date="20/1/1982" time="0.00000000000000">
+ NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                          
+ BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                        
+ USING  OLDTRAN                                                          
+</message>
+<comment date="20/1/1982" time="0.00000000000000">
+ NO NON-NEIGHBOUR CONNECTIONS FOUND                                      
+</comment>
+<message date="20/1/1982" time="0.00000000000000">
+ NUMBER OF ACTIVE CELLS IS 225                                           
+</message>
+<message date="20/1/1982" time="0.00000000000000">
+ THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS                  
+     458304 BYTES                                                        
+</message>
+<message date="20/1/1982" time="0.00000000000000">
+    58530 CHARACTER VARIABLES USED                                       
+</message>
+<warning date="20/1/1982" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SWOF             IN DATA                          
+ FOR KEYWORD RPTPROPS IS IGNORED                                         
+</warning>
+<warning date="20/1/1982" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SWAT             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="20/1/1982" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC BW               IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="20/1/1982" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC BO               IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="20/1/1982" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC DWNO             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<warning date="20/1/1982" time="0.00000000000000">
+ UNRECOGNISED MNEMONIC SOIL             IN DATA                          
+ FOR KEYWORD RPTRST   IS IGNORED                                         
+</warning>
+<message date="30/1/1982" time="10.00000000000000">
+ RESTART FILE WRITTEN   REPORT     1                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="9/2/1982" time="20.00000000000000">
+ RESTART FILE WRITTEN   REPORT     2                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="19/2/1982" time="30.00000000000000">
+ RESTART FILE WRITTEN   REPORT     3                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="1/3/1982" time="40.00000000000000">
+ RESTART FILE WRITTEN   REPORT     4                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="11/3/1982" time="50.00000000000000">
+ RESTART FILE WRITTEN   REPORT     5                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="21/3/1982" time="60.00000000000000">
+ RESTART FILE WRITTEN   REPORT     6                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="31/3/1982" time="70.00000000000000">
+ RESTART FILE WRITTEN   REPORT     7                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="10/4/1982" time="80.00000000000000">
+ RESTART FILE WRITTEN   REPORT     8                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="20/4/1982" time="90.00000000000000">
+ RESTART FILE WRITTEN   REPORT     9                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="30/4/1982" time="100.00000000000000">
+ RESTART FILE WRITTEN   REPORT    10                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="10/5/1982" time="110.00000000000000">
+ RESTART FILE WRITTEN   REPORT    11                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="20/5/1982" time="120.00000000000000">
+ RESTART FILE WRITTEN   REPORT    12                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="30/5/1982" time="130.00000000000000">
+ RESTART FILE WRITTEN   REPORT    13                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="9/6/1982" time="140.00000000000000">
+ RESTART FILE WRITTEN   REPORT    14                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="19/6/1982" time="150.00000000000000">
+ RESTART FILE WRITTEN   REPORT    15                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="29/6/1982" time="160.00000000000000">
+ RESTART FILE WRITTEN   REPORT    16                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="9/7/1982" time="170.00000000000000">
+ RESTART FILE WRITTEN   REPORT    17                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="19/7/1982" time="180.00000000000000">
+ RESTART FILE WRITTEN   REPORT    18                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="29/7/1982" time="190.00000000000000">
+ RESTART FILE WRITTEN   REPORT    19                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="8/8/1982" time="200.00000000000000">
+ RESTART FILE WRITTEN   REPORT    20                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="18/8/1982" time="210.00000000000000">
+ RESTART FILE WRITTEN   REPORT    21                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="28/8/1982" time="220.00000000000000">
+ RESTART FILE WRITTEN   REPORT    22                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="7/9/1982" time="230.00000000000000">
+ RESTART FILE WRITTEN   REPORT    23                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="17/9/1982" time="240.00000000000000">
+ RESTART FILE WRITTEN   REPORT    24                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="27/9/1982" time="250.00000000000000">
+ RESTART FILE WRITTEN   REPORT    25                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="7/10/1982" time="260.00000000000000">
+ RESTART FILE WRITTEN   REPORT    26                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="17/10/1982" time="270.00000000000000">
+ RESTART FILE WRITTEN   REPORT    27                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="27/10/1982" time="280.00000000000000">
+ RESTART FILE WRITTEN   REPORT    28                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="6/11/1982" time="290.00000000000000">
+ RESTART FILE WRITTEN   REPORT    29                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="16/11/1982" time="300.00000000000000">
+ RESTART FILE WRITTEN   REPORT    30                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="26/11/1982" time="310.00000000000000">
+ RESTART FILE WRITTEN   REPORT    31                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="6/12/1982" time="320.00000000000000">
+ RESTART FILE WRITTEN   REPORT    32                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="16/12/1982" time="330.00000000000000">
+ RESTART FILE WRITTEN   REPORT    33                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="26/12/1982" time="340.00000000000000">
+ RESTART FILE WRITTEN   REPORT    34                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="5/1/1983" time="350.00000000000000">
+ RESTART FILE WRITTEN   REPORT    35                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="15/1/1983" time="360.00000000000000">
+ RESTART FILE WRITTEN   REPORT    36                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="25/1/1983" time="370.00000000000000">
+ RESTART FILE WRITTEN   REPORT    37                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="4/2/1983" time="380.00000000000000">
+ RESTART FILE WRITTEN   REPORT    38                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="14/2/1983" time="390.00000000000000">
+ RESTART FILE WRITTEN   REPORT    39                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="24/2/1983" time="400.00000000000000">
+ RESTART FILE WRITTEN   REPORT    40                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="6/3/1983" time="410.00000000000000">
+ RESTART FILE WRITTEN   REPORT    41                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="16/3/1983" time="420.00000000000000">
+ RESTART FILE WRITTEN   REPORT    42                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="26/3/1983" time="430.00000000000000">
+ RESTART FILE WRITTEN   REPORT    43                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="5/4/1983" time="440.00000000000000">
+ RESTART FILE WRITTEN   REPORT    44                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="15/4/1983" time="450.00000000000000">
+ RESTART FILE WRITTEN   REPORT    45                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="25/4/1983" time="460.00000000000000">
+ RESTART FILE WRITTEN   REPORT    46                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="5/5/1983" time="470.00000000000000">
+ RESTART FILE WRITTEN   REPORT    47                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="15/5/1983" time="480.00000000000000">
+ RESTART FILE WRITTEN   REPORT    48                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="25/5/1983" time="490.00000000000000">
+ RESTART FILE WRITTEN   REPORT    49                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="4/6/1983" time="500.00000000000000">
+ RESTART FILE WRITTEN   REPORT    50                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="14/6/1983" time="510.00000000000000">
+ RESTART FILE WRITTEN   REPORT    51                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="24/6/1983" time="520.00000000000000">
+ RESTART FILE WRITTEN   REPORT    52                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="4/7/1983" time="530.00000000000000">
+ RESTART FILE WRITTEN   REPORT    53                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="14/7/1983" time="540.00000000000000">
+ RESTART FILE WRITTEN   REPORT    54                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="24/7/1983" time="550.00000000000000">
+ RESTART FILE WRITTEN   REPORT    55                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="3/8/1983" time="560.00000000000000">
+ RESTART FILE WRITTEN   REPORT    56                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="13/8/1983" time="570.00000000000000">
+ RESTART FILE WRITTEN   REPORT    57                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="23/8/1983" time="580.00000000000000">
+ RESTART FILE WRITTEN   REPORT    58                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="2/9/1983" time="590.00000000000000">
+ RESTART FILE WRITTEN   REPORT    59                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="12/9/1983" time="600.00000000000000">
+ RESTART FILE WRITTEN   REPORT    60                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="22/9/1983" time="610.00000000000000">
+ RESTART FILE WRITTEN   REPORT    61                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="2/10/1983" time="620.00000000000000">
+ RESTART FILE WRITTEN   REPORT    62                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="12/10/1983" time="630.00000000000000">
+ RESTART FILE WRITTEN   REPORT    63                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="22/10/1983" time="640.00000000000000">
+ RESTART FILE WRITTEN   REPORT    64                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="1/11/1983" time="650.00000000000000">
+ RESTART FILE WRITTEN   REPORT    65                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="11/11/1983" time="660.00000000000000">
+ RESTART FILE WRITTEN   REPORT    66                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="21/11/1983" time="670.00000000000000">
+ RESTART FILE WRITTEN   REPORT    67                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="1/12/1983" time="680.00000000000000">
+ RESTART FILE WRITTEN   REPORT    68                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="11/12/1983" time="690.00000000000000">
+ RESTART FILE WRITTEN   REPORT    69                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="21/12/1983" time="700.00000000000000">
+ RESTART FILE WRITTEN   REPORT    70                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="31/12/1983" time="710.00000000000000">
+ RESTART FILE WRITTEN   REPORT    71                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="10/1/1984" time="720.00000000000000">
+ RESTART FILE WRITTEN   REPORT    72                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+<message date="20/1/1984" time="730.00000000000000">
+ RESTART FILE WRITTEN   REPORT    73                                     
+ RESTART INCLUDES WATER AND GAS PHASE PRESSURES                          
+                  FLUID VISCOSITIES                                      
+                  PHASE RESERVOIR DENSITIES                              
+</message>
+</eclipse>

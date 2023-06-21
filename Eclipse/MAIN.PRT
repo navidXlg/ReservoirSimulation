@@ -1,0 +1,1500 @@
+
+
+
+ $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+ $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+ $      $      $       $   $   $  $      $         $   $   $  $   $
+ $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+ $      $      $       $   $          $  $         $   $   $  $   $
+ $      $   $  $       $   $      $   $  $         $   $   $  $   $
+ $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                       $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                       $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                       $      $      $       $   $   $  $      $         $   $   $  $   $
+                       $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                       $      $      $       $   $          $  $         $   $   $  $   $
+                       $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                       $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                             $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                             $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                             $      $      $       $   $   $  $      $         $   $   $  $   $
+                                             $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                             $      $      $       $   $          $  $         $   $   $  $   $
+                                             $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                             $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+
+
+
+                                                                   $$$$$   $$$   $      $$$  $$$$    $$$   $$$$$     $    $$$    $$$ 
+                                                                   $      $   $  $       $   $   $  $   $  $        $$   $   $  $   $
+                                                                   $      $      $       $   $   $  $      $         $   $   $  $   $
+                                                                   $$$$   $      $       $   $$$$    $$$   $$$$      $   $   $  $   $
+                                                                   $      $      $       $   $          $  $         $   $   $  $   $
+                                                                   $      $   $  $       $   $      $   $  $         $   $   $  $   $
+                                                                   $$$$$   $$$   $$$$$  $$$  $       $$$   $$$$$    $$$   $$$    $$$ 
+ 
+ Version =  2010.1
+ Arch    =  PC WINDOWS (32 bit)
+Annex    | Modification date    | Update date          | baseline             
+=====    | =================    | ===========          | ========             
+ECLIPSE  | 28-MAY-2010 11:36:49 | 28-MAY-2010 20:43:29 | S:\2010.1_w22
+system   | 27-MAY-2010 16:14:43 | 28-MAY-2010 20:45:05 | S:\2010.1_w22
+utility  | 28-MAY-2010 11:56:05 | 28-MAY-2010 20:45:06 | S:\2010.1_w22
+ 
+
+1
+
+ ******** ECHO OF INPUT DATA FOR RUN main
+
+ 0: ------------------------------------------------------------------------
+ 0: --> The Simulation Project
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: RUNSPEC
+ 0: TITLE
+ 0:    SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY
+ 0: 
+ 0: DIMENS
+ 0:    15   15    1 /
+ 0: 
+ 0: TABDIMS
+ 0:     1    1   16   12    1   12 /
+ 0: 
+ 0: OIL
+ 0: 
+ 0: WATER
+ 0: 
+ 0: FIELD
+ 0: 
+ 0: START
+ 0:   20 'JAN' 1982  /
+ 0: 
+ 0: NSTACK
+ 0:    24
+ 0: /
+ 0: 
+ 0: FMTOUT
+ 0: UNIFOUT
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: --> The Simulation Project
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: GRID
+ 0: 
+ 0: INIT
+ 0: GRIDFILE
+ 0: 2 1
+ 0: /
+ 0: 
+ 0: TOPS
+ 0:    225*3264.436
+ 0: /
+ 0: 
+ 0: DX
+ 0:    225*98.42
+ 0: /
+ 0: 
+ 0: DY
+ 0:    225*98.42
+ 0: /
+ 0: 
+ 0: DZ
+ 0:    225*32.81
+ 0: /
+ 0: 
+ 0: 
+ 0: PORO
+ 0:    225*0.1 /
+ 0: 
+ 0: PERMX
+ 0:    225*100  /
+ 0: 
+ 0: PERMY
+ 0:    225*100 /
+ 0: 
+ 0: PERMZ
+ 0:    225*100 /
+ 0: 
+ 0: RPTGRID
+ 0:   'DX'
+ 0:   'DY'
+ 0:   'DZ'
+ 0:   'PERMX'
+ 0:   'PERMY'
+ 0:   'PERMZ'
+ 0:   'MULTZ'
+ 0:   'PORO'
+ 0:   'TOPS'
+ 0:   'PORV'
+ 0:   'TRANX'
+ 0:   'TRANY'
+ 0:   'TRANZ'
+ 0:  /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: --> The Simulation Project
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: PROPS
+ 0: 
+ 0: SWOF
+ 0: 0.1	0	0.35	4.998
+ 0: 0.15	0.020278811	0.281576653	4.199708333
+ 0: 0.2	0.046588475	0.221878351	3.470833333
+ 0: 0.25	0.075785828	0.170498751	2.811375
+ 0: 0.3	0.107032208	0.127010579	2.221333333
+ 0: 0.35	0.139896388	0.090962006	1.700708333
+ 0: 0.4	0.174110113	0.061871843	1.2495
+ 0: 0.45	0.209488479	0.039222922	0.867708333
+ 0: 0.5	0.245895443	0.02245251	0.555333333
+ 0: 0.55	0.283226253	0.0109375	0.312375
+ 0: 0.6	0.321397501	0.003969081	0.138833333
+ 0: 0.65	0.360341032	0.000701641	0.034708333
+ 0: 0.7	0.4	0	0
+ 0: /
+ 0: 
+ 0: 
+ 0: PVTW
+ 0: --Pref
+ 0:    4000     1.03     3.0E-6      0.40     0.0
+ 0: /
+ 0: 
+ 0: ROCK
+ 0:    4000.0  0.000001
+ 0: /
+ 0: 
+ 0: --Undersaturated oil
+ 0: -- Pressure    Bo        Muo
+ 0: PVDO
+ 0:    2500        1.260       0.5
+ 0:    3000        1.257       0.55
+ 0:    3500        1.254       0.6
+ 0:    4000        1.251       0.6
+ 0:    4500        1.248       0.6
+ 0: /
+ 0: 
+ 0: DENSITY      oil     water
+ 0:             37.45   62.020
+ 0: /
+ 0: 
+ 0: RPTPROPS
+ 0: -- PROPS Reporting Options
+ 0: --
+ 0: 'SWOF' 'PVTW' 'PVDO' 'DENSITY' 'GRAVITY' 'SDENSITY' 'ROCK' 'ROCKTAB'
+ 0: /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: --> The Simulation Project
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: REGIONS
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -->The Simulation Project
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: SOLUTION
+ 0: 
+ 0: PRESSURE
+ 0:    225*4000
+ 0: /
+ 0: 
+ 0: SWAT
+ 0:    112*0.1 113*0.7
+ 0: /
+ 0: 
+ 0: RPTSOL
+ 0: 'PRES' /
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -->The Simulation Project
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: SUMMARY
+ 0: 
+ 0: ------------------------------------------------------------------------
+ 0: -->The Simulation Project
+ 0: ------------------------------------------------------------------------
+ 0: 
+ 0: SCHEDULE
+ 0: 
+ 0: RPTRST
+ 0:    PRESSURE SWAT BW BO KRW KRO DENW DWNO VWAT VOIL SOIL
+ 0: /
+ 0: 
+ 0: 
+ 0: TSTEP
+ 0: 73*10
+ 0: /
+ 0: 
+ 0: END
+
+ ******** END OF INPUT DATA FOR RUN main
+     1 READING RUNSPEC 
+     2 READING TITLE   
+     3 READING DIMENS  
+     4 READING TABDIMS 
+     5 READING OIL     
+     6 READING WATER   
+     7 READING FIELD   
+     8 READING START   
+     9 READING NSTACK  
+    10 READING FMTOUT  
+    11 READING UNIFOUT 
+    12 READING GRID    
+
+ @--WARNING  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           THE NUMBER OF WELLS HAS BEEN DEFAULTED TO ZERO                  
+ @           USING KEYWORD WELLDIMS IN THE RUNSPEC SECTION                   
+ @           OR NO WELLS WERE FOUND IN THE SCHEDULE SECTION                  
+
+ @--MESSAGE  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           CHECKING FOR LICENSES                                           
+
+ @--MESSAGE  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           THE MEMORY REQUIRED TO PROCESS THE GRID SECTION IS              
+ @               102776 BYTES                                                
+    13 READING INIT    
+    14 READING GRIDFILE
+    15 READING TOPS    
+    16 READING DX      
+    17 READING DY      
+    18 READING DZ      
+    19 READING PORO    
+    20 READING PERMX   
+    21 READING PERMY   
+    22 READING PERMZ   
+    23 READING RPTGRID 
+    24 READING PROPS   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           NEITHER OLDTRAN,OLDTRANR NOR NEWTRAN SPECIFIED                  
+ @           BLOCK CENTRE TRANSMISSIBILITIES TO BE CALCULATED                
+ @           USING  OLDTRAN                                                  
+
+ @--COMMENT  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           NO NON-NEIGHBOUR CONNECTIONS FOUND                              
+1                             **********************************************************************   1
+  DX       AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+     CONSTANT ARRAY =  98.4200        FEET                                                                                           
+1                             **********************************************************************   2
+  DY       AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+     CONSTANT ARRAY =  98.4200        FEET                                                                                           
+1                             **********************************************************************   3
+  DZ       AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+     CONSTANT ARRAY =  32.8100        FEET                                                                                           
+1                             **********************************************************************   4
+  PERMX    AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+     CONSTANT ARRAY =  100.000       MDARCY                                                                                          
+1                             **********************************************************************   5
+  PERMY    AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+     CONSTANT ARRAY =  100.000       MDARCY                                                                                          
+1                             **********************************************************************   6
+  PERMZ    AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS  MDARCY         
+
+     CONSTANT ARRAY =  100.000       MDARCY                                                                                          
+1                             **********************************************************************   7
+  MULTZ    AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS                 
+
+     CONSTANT ARRAY =  1.00000                                                                                                       
+1                             **********************************************************************   8
+  PORO     AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS                 
+
+     CONSTANT ARRAY =  0.10000                                                                                                       
+1                             **********************************************************************   9
+  TOPS     AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS   FEET          
+
+     CONSTANT ARRAY =  3264.44        FEET                                                                                           
+1                             **********************************************************************  10
+  PORV     AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS    RB           
+
+     CONSTANT ARRAY =   5660.5         RB                                                                                            
+1                             **********************************************************************  11
+  TRANX    AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS CPB/D/PS        
+
+ MINIMUM VALUE =   0.0000  AT ( 15,  1,  1)     MAXIMUM VALUE =   3.6977  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
+
+ (*,  1,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*,  2,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*,  3,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*,  4,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*,  5,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*,  6,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*,  7,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*,  8,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*,  9,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*, 10,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*, 11,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*, 12,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*, 13,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*, 14,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+ (*, 15,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  0.0000
+1                             **********************************************************************  12
+  TRANY    AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS CPB/D/PS        
+
+ MINIMUM VALUE =   0.0000  AT (  1, 15,  1)     MAXIMUM VALUE =   3.6977  AT (  1,  1,  1)                                           
+
+ (I,  J,  K) I=  1       2       3       4       5       6       7       8       9      10      11      12      13      14      15
+
+ (*,  1,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*,  2,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*,  3,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*,  4,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*,  5,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*,  6,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*,  7,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*,  8,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*,  9,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*, 10,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*, 11,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*, 12,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*, 13,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*, 14,  1)   3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977  3.6977
+ (*, 15,  1)   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+1                             **********************************************************************  13
+  TRANZ    AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS CPB/D/PS        
+
+     CONSTANT ARRAY =   0.0000      CPB/D/PS                                                                                         
+
+ @--MESSAGE  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           NUMBER OF ACTIVE CELLS IS 225                                   
+
+ @--MESSAGE  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           THE MEMORY REQUIRED TO PROCESS THE SOLUTION SECTION IS          
+ @               458304 BYTES                                                
+
+ @--MESSAGE  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @              58530 CHARACTER VARIABLES USED                               
+    25 READING SWOF    
+    26 READING PVTW    
+    27 READING ROCK    
+    28 READING PVDO    
+    29 READING DENSITY 
+    30 READING RPTPROPS
+
+ @--WARNING  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           UNRECOGNISED MNEMONIC SWOF             IN DATA                  
+ @           FOR KEYWORD RPTPROPS IS IGNORED                                 
+    31 READING REGIONS 
+1                             **********************************************************************  14
+  PVDO     AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ ---------------------------
+ DEAD OIL PVT DATA TABLE   1
+ ---------------------------
+
+ PRESSURE     BO       VO   
+   PSIA    RB/STB     CP   
+
+  2500.00   1.2600   0.5000
+  3000.00   1.2570   0.5500
+  3500.00   1.2540   0.6000
+  4000.00   1.2510   0.6000
+  4500.00   1.2480   0.6000
+1                             **********************************************************************  15
+  PVTW     AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+               --------------------
+               WATER PVT PROPERTIES
+               --------------------
+
+ TABLE   PREF    FVFREF    COMP    VISREF  VISCOMP
+         PSIA    RB/STB    1/PSI     CP      1/PSI 
+
+   1    4000.0   1.0300  3.00D-06   0.40  0.00D+00
+1                             **********************************************************************  16
+  DENSITY  AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+       -----------------
+       SURFACE DENSITIES
+       -----------------
+
+ TABLE    OIL     WATER    GAS 
+       LB/FT3   LB/FT3   LB/FT3 
+
+   1    37.450   62.020  0.00000
+1                             **********************************************************************  17
+  ROCK     AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+     ---------------
+     ROCK PROPERTIES
+     ---------------
+
+ TABLE   PREF     COMP 
+         PSIA     1/PSI 
+
+   1    4000.0  1.00D-06
+    32 READING SOLUTION
+    33 READING PRESSURE
+    34 READING SWAT    
+    35 READING RPTSOL  
+    36 READING SUMMARY 
+1                             **********************************************************************  18
+  PRESSURE AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ UNITS   PSIA          
+
+     CONSTANT ARRAY =  4000.00        PSIA                                                                                           
+    37 READING SCHEDULE
+    38 READING RPTRST  
+
+ @--WARNING  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           UNRECOGNISED MNEMONIC SWAT             IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           UNRECOGNISED MNEMONIC BW               IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           UNRECOGNISED MNEMONIC BO               IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           UNRECOGNISED MNEMONIC DWNO             IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+
+ @--WARNING  AT TIME        0.0   DAYS    (20-JAN-1982):
+ @           UNRECOGNISED MNEMONIC SOIL             IN DATA                  
+ @           FOR KEYWORD RPTRST   IS IGNORED                                 
+    39 READING TSTEP   
+1                             **********************************************************************  19
+  SIMULATE AT     0.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   0    20 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP    1 TIME=    1.00  DAYS (  +1.0  DAYS INIT  1 ITS) (21-JAN-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    2 TIME=    4.00  DAYS (  +3.0  DAYS MAXF  1 ITS) (24-JAN-1982)          
+  PAV=  4000.6  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ STEP    3 TIME=   10.00  DAYS (  +6.0  DAYS REPT  1 ITS) (30-JAN-1982)          
+  PAV=  4000.6  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME       10.0   DAYS    (30-JAN-1982):
+ @           RESTART FILE WRITTEN   REPORT     1                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  20
+  SIMULATE AT    10.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   1    30 JAN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP    4 TIME=   20.00  DAYS ( +10.0  DAYS REPT  1 ITS) (9-FEB-1982)           
+  PAV=  4000.6  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME       20.0   DAYS    ( 9-FEB-1982):
+ @           RESTART FILE WRITTEN   REPORT     2                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  21
+  SIMULATE AT    20.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   2     9 FEB 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP    5 TIME=   30.00  DAYS ( +10.0  DAYS REPT  1 ITS) (19-FEB-1982)          
+  PAV=  4000.6  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME       30.0   DAYS    (19-FEB-1982):
+ @           RESTART FILE WRITTEN   REPORT     3                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  22
+  SIMULATE AT    30.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   3    19 FEB 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP    6 TIME=   40.00  DAYS ( +10.0  DAYS REPT  1 ITS) (1-MAR-1982)           
+  PAV=  4000.6  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME       40.0   DAYS    ( 1-MAR-1982):
+ @           RESTART FILE WRITTEN   REPORT     4                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  23
+  SIMULATE AT    40.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   4     1 MAR 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP    7 TIME=   50.00  DAYS ( +10.0  DAYS REPT  1 ITS) (11-MAR-1982)          
+  PAV=  4000.6  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME       50.0   DAYS    (11-MAR-1982):
+ @           RESTART FILE WRITTEN   REPORT     5                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  24
+  SIMULATE AT    50.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   5    11 MAR 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP    8 TIME=   60.00  DAYS ( +10.0  DAYS REPT  1 ITS) (21-MAR-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME       60.0   DAYS    (21-MAR-1982):
+ @           RESTART FILE WRITTEN   REPORT     6                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  25
+  SIMULATE AT    60.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   6    21 MAR 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP    9 TIME=   70.00  DAYS ( +10.0  DAYS REPT  1 ITS) (31-MAR-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME       70.0   DAYS    (31-MAR-1982):
+ @           RESTART FILE WRITTEN   REPORT     7                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  26
+  SIMULATE AT    70.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   7    31 MAR 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   10 TIME=   80.00  DAYS ( +10.0  DAYS REPT  1 ITS) (10-APR-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME       80.0   DAYS    (10-APR-1982):
+ @           RESTART FILE WRITTEN   REPORT     8                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  27
+  SIMULATE AT    80.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   8    10 APR 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   11 TIME=   90.00  DAYS ( +10.0  DAYS REPT  1 ITS) (20-APR-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME       90.0   DAYS    (20-APR-1982):
+ @           RESTART FILE WRITTEN   REPORT     9                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  28
+  SIMULATE AT    90.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT   9    20 APR 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   12 TIME=  100.00  DAYS ( +10.0  DAYS REPT  1 ITS) (30-APR-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      100.0   DAYS    (30-APR-1982):
+ @           RESTART FILE WRITTEN   REPORT    10                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  29
+  SIMULATE AT   100.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  10    30 APR 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   13 TIME=  110.00  DAYS ( +10.0  DAYS REPT  1 ITS) (10-MAY-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      110.0   DAYS    (10-MAY-1982):
+ @           RESTART FILE WRITTEN   REPORT    11                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  30
+  SIMULATE AT   110.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  11    10 MAY 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   14 TIME=  120.00  DAYS ( +10.0  DAYS REPT  1 ITS) (20-MAY-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      120.0   DAYS    (20-MAY-1982):
+ @           RESTART FILE WRITTEN   REPORT    12                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  31
+  SIMULATE AT   120.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  12    20 MAY 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   15 TIME=  130.00  DAYS ( +10.0  DAYS REPT  1 ITS) (30-MAY-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      130.0   DAYS    (30-MAY-1982):
+ @           RESTART FILE WRITTEN   REPORT    13                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  32
+  SIMULATE AT   130.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  13    30 MAY 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   16 TIME=  140.00  DAYS ( +10.0  DAYS REPT  1 ITS) (9-JUN-1982)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      140.0   DAYS    ( 9-JUN-1982):
+ @           RESTART FILE WRITTEN   REPORT    14                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  33
+  SIMULATE AT   140.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  14     9 JUN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   17 TIME=  150.00  DAYS ( +10.0  DAYS REPT  1 ITS) (19-JUN-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      150.0   DAYS    (19-JUN-1982):
+ @           RESTART FILE WRITTEN   REPORT    15                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  34
+  SIMULATE AT   150.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  15    19 JUN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   18 TIME=  160.00  DAYS ( +10.0  DAYS REPT  1 ITS) (29-JUN-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      160.0   DAYS    (29-JUN-1982):
+ @           RESTART FILE WRITTEN   REPORT    16                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  35
+  SIMULATE AT   160.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  16    29 JUN 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   19 TIME=  170.00  DAYS ( +10.0  DAYS REPT  1 ITS) (9-JLY-1982)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      170.0   DAYS    ( 9-JLY-1982):
+ @           RESTART FILE WRITTEN   REPORT    17                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  36
+  SIMULATE AT   170.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  17     9 JLY 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   20 TIME=  180.00  DAYS ( +10.0  DAYS REPT  1 ITS) (19-JLY-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      180.0   DAYS    (19-JLY-1982):
+ @           RESTART FILE WRITTEN   REPORT    18                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  37
+  SIMULATE AT   180.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  18    19 JLY 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   21 TIME=  190.00  DAYS ( +10.0  DAYS REPT  1 ITS) (29-JLY-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      190.0   DAYS    (29-JLY-1982):
+ @           RESTART FILE WRITTEN   REPORT    19                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  38
+  SIMULATE AT   190.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  19    29 JLY 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   22 TIME=  200.00  DAYS ( +10.0  DAYS REPT  1 ITS) (8-AUG-1982)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      200.0   DAYS    ( 8-AUG-1982):
+ @           RESTART FILE WRITTEN   REPORT    20                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  39
+  SIMULATE AT   200.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  20     8 AUG 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   23 TIME=  210.00  DAYS ( +10.0  DAYS REPT  1 ITS) (18-AUG-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      210.0   DAYS    (18-AUG-1982):
+ @           RESTART FILE WRITTEN   REPORT    21                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  40
+  SIMULATE AT   210.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  21    18 AUG 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   24 TIME=  220.00  DAYS ( +10.0  DAYS REPT  1 ITS) (28-AUG-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      220.0   DAYS    (28-AUG-1982):
+ @           RESTART FILE WRITTEN   REPORT    22                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  41
+  SIMULATE AT   220.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  22    28 AUG 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   25 TIME=  230.00  DAYS ( +10.0  DAYS REPT  1 ITS) (7-SEP-1982)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      230.0   DAYS    ( 7-SEP-1982):
+ @           RESTART FILE WRITTEN   REPORT    23                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  42
+  SIMULATE AT   230.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  23     7 SEP 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   26 TIME=  240.00  DAYS ( +10.0  DAYS REPT  1 ITS) (17-SEP-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      240.0   DAYS    (17-SEP-1982):
+ @           RESTART FILE WRITTEN   REPORT    24                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  43
+  SIMULATE AT   240.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  24    17 SEP 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   27 TIME=  250.00  DAYS ( +10.0  DAYS REPT  1 ITS) (27-SEP-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      250.0   DAYS    (27-SEP-1982):
+ @           RESTART FILE WRITTEN   REPORT    25                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  44
+  SIMULATE AT   250.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  25    27 SEP 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   28 TIME=  260.00  DAYS ( +10.0  DAYS REPT  1 ITS) (7-OCT-1982)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      260.0   DAYS    ( 7-OCT-1982):
+ @           RESTART FILE WRITTEN   REPORT    26                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  45
+  SIMULATE AT   260.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  26     7 OCT 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   29 TIME=  270.00  DAYS ( +10.0  DAYS REPT  1 ITS) (17-OCT-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      270.0   DAYS    (17-OCT-1982):
+ @           RESTART FILE WRITTEN   REPORT    27                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  46
+  SIMULATE AT   270.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  27    17 OCT 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   30 TIME=  280.00  DAYS ( +10.0  DAYS REPT  1 ITS) (27-OCT-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      280.0   DAYS    (27-OCT-1982):
+ @           RESTART FILE WRITTEN   REPORT    28                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  47
+  SIMULATE AT   280.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  28    27 OCT 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   31 TIME=  290.00  DAYS ( +10.0  DAYS REPT  1 ITS) (6-NOV-1982)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      290.0   DAYS    ( 6-NOV-1982):
+ @           RESTART FILE WRITTEN   REPORT    29                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  48
+  SIMULATE AT   290.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  29     6 NOV 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   32 TIME=  300.00  DAYS ( +10.0  DAYS REPT  1 ITS) (16-NOV-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      300.0   DAYS    (16-NOV-1982):
+ @           RESTART FILE WRITTEN   REPORT    30                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  49
+  SIMULATE AT   300.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  30    16 NOV 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   33 TIME=  310.00  DAYS ( +10.0  DAYS REPT  1 ITS) (26-NOV-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      310.0   DAYS    (26-NOV-1982):
+ @           RESTART FILE WRITTEN   REPORT    31                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  50
+  SIMULATE AT   310.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  31    26 NOV 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   34 TIME=  320.00  DAYS ( +10.0  DAYS REPT  1 ITS) (6-DEC-1982)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      320.0   DAYS    ( 6-DEC-1982):
+ @           RESTART FILE WRITTEN   REPORT    32                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  51
+  SIMULATE AT   320.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  32     6 DEC 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   35 TIME=  330.00  DAYS ( +10.0  DAYS REPT  1 ITS) (16-DEC-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      330.0   DAYS    (16-DEC-1982):
+ @           RESTART FILE WRITTEN   REPORT    33                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  52
+  SIMULATE AT   330.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  33    16 DEC 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   36 TIME=  340.00  DAYS ( +10.0  DAYS REPT  1 ITS) (26-DEC-1982)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      340.0   DAYS    (26-DEC-1982):
+ @           RESTART FILE WRITTEN   REPORT    34                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  53
+  SIMULATE AT   340.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  34    26 DEC 1982   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   37 TIME=  350.00  DAYS ( +10.0  DAYS REPT  1 ITS) (5-JAN-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      350.0   DAYS    ( 5-JAN-1983):
+ @           RESTART FILE WRITTEN   REPORT    35                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  54
+  SIMULATE AT   350.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  35     5 JAN 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   38 TIME=  360.00  DAYS ( +10.0  DAYS REPT  1 ITS) (15-JAN-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      360.0   DAYS    (15-JAN-1983):
+ @           RESTART FILE WRITTEN   REPORT    36                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  55
+  SIMULATE AT   360.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  36    15 JAN 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   39 TIME=  370.00  DAYS ( +10.0  DAYS REPT  1 ITS) (25-JAN-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      370.0   DAYS    (25-JAN-1983):
+ @           RESTART FILE WRITTEN   REPORT    37                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  56
+  SIMULATE AT   370.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  37    25 JAN 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   40 TIME=  380.00  DAYS ( +10.0  DAYS REPT  1 ITS) (4-FEB-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      380.0   DAYS    ( 4-FEB-1983):
+ @           RESTART FILE WRITTEN   REPORT    38                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  57
+  SIMULATE AT   380.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  38     4 FEB 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   41 TIME=  390.00  DAYS ( +10.0  DAYS REPT  1 ITS) (14-FEB-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      390.0   DAYS    (14-FEB-1983):
+ @           RESTART FILE WRITTEN   REPORT    39                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  58
+  SIMULATE AT   390.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  39    14 FEB 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   42 TIME=  400.00  DAYS ( +10.0  DAYS REPT  1 ITS) (24-FEB-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      400.0   DAYS    (24-FEB-1983):
+ @           RESTART FILE WRITTEN   REPORT    40                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  59
+  SIMULATE AT   400.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  40    24 FEB 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   43 TIME=  410.00  DAYS ( +10.0  DAYS REPT  1 ITS) (6-MAR-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      410.0   DAYS    ( 6-MAR-1983):
+ @           RESTART FILE WRITTEN   REPORT    41                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  60
+  SIMULATE AT   410.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  41     6 MAR 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   44 TIME=  420.00  DAYS ( +10.0  DAYS REPT  1 ITS) (16-MAR-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      420.0   DAYS    (16-MAR-1983):
+ @           RESTART FILE WRITTEN   REPORT    42                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  61
+  SIMULATE AT   420.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  42    16 MAR 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   45 TIME=  430.00  DAYS ( +10.0  DAYS REPT  1 ITS) (26-MAR-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      430.0   DAYS    (26-MAR-1983):
+ @           RESTART FILE WRITTEN   REPORT    43                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  62
+  SIMULATE AT   430.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  43    26 MAR 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   46 TIME=  440.00  DAYS ( +10.0  DAYS REPT  1 ITS) (5-APR-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      440.0   DAYS    ( 5-APR-1983):
+ @           RESTART FILE WRITTEN   REPORT    44                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  63
+  SIMULATE AT   440.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  44     5 APR 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   47 TIME=  450.00  DAYS ( +10.0  DAYS REPT  1 ITS) (15-APR-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      450.0   DAYS    (15-APR-1983):
+ @           RESTART FILE WRITTEN   REPORT    45                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  64
+  SIMULATE AT   450.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  45    15 APR 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   48 TIME=  460.00  DAYS ( +10.0  DAYS REPT  1 ITS) (25-APR-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      460.0   DAYS    (25-APR-1983):
+ @           RESTART FILE WRITTEN   REPORT    46                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  65
+  SIMULATE AT   460.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  46    25 APR 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   49 TIME=  470.00  DAYS ( +10.0  DAYS REPT  1 ITS) (5-MAY-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      470.0   DAYS    ( 5-MAY-1983):
+ @           RESTART FILE WRITTEN   REPORT    47                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  66
+  SIMULATE AT   470.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  47     5 MAY 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   50 TIME=  480.00  DAYS ( +10.0  DAYS REPT  1 ITS) (15-MAY-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      480.0   DAYS    (15-MAY-1983):
+ @           RESTART FILE WRITTEN   REPORT    48                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  67
+  SIMULATE AT   480.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  48    15 MAY 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   51 TIME=  490.00  DAYS ( +10.0  DAYS REPT  1 ITS) (25-MAY-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      490.0   DAYS    (25-MAY-1983):
+ @           RESTART FILE WRITTEN   REPORT    49                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  68
+  SIMULATE AT   490.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  49    25 MAY 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   52 TIME=  500.00  DAYS ( +10.0  DAYS REPT  1 ITS) (4-JUN-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      500.0   DAYS    ( 4-JUN-1983):
+ @           RESTART FILE WRITTEN   REPORT    50                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  69
+  SIMULATE AT   500.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  50     4 JUN 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   53 TIME=  510.00  DAYS ( +10.0  DAYS REPT  1 ITS) (14-JUN-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      510.0   DAYS    (14-JUN-1983):
+ @           RESTART FILE WRITTEN   REPORT    51                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  70
+  SIMULATE AT   510.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  51    14 JUN 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   54 TIME=  520.00  DAYS ( +10.0  DAYS REPT  1 ITS) (24-JUN-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      520.0   DAYS    (24-JUN-1983):
+ @           RESTART FILE WRITTEN   REPORT    52                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  71
+  SIMULATE AT   520.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  52    24 JUN 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   55 TIME=  530.00  DAYS ( +10.0  DAYS REPT  1 ITS) (4-JLY-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      530.0   DAYS    ( 4-JLY-1983):
+ @           RESTART FILE WRITTEN   REPORT    53                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  72
+  SIMULATE AT   530.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  53     4 JLY 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   56 TIME=  540.00  DAYS ( +10.0  DAYS REPT  1 ITS) (14-JLY-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      540.0   DAYS    (14-JLY-1983):
+ @           RESTART FILE WRITTEN   REPORT    54                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  73
+  SIMULATE AT   540.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  54    14 JLY 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   57 TIME=  550.00  DAYS ( +10.0  DAYS REPT  1 ITS) (24-JLY-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      550.0   DAYS    (24-JLY-1983):
+ @           RESTART FILE WRITTEN   REPORT    55                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  74
+  SIMULATE AT   550.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  55    24 JLY 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   58 TIME=  560.00  DAYS ( +10.0  DAYS REPT  1 ITS) (3-AUG-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      560.0   DAYS    ( 3-AUG-1983):
+ @           RESTART FILE WRITTEN   REPORT    56                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  75
+  SIMULATE AT   560.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  56     3 AUG 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   59 TIME=  570.00  DAYS ( +10.0  DAYS REPT  1 ITS) (13-AUG-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      570.0   DAYS    (13-AUG-1983):
+ @           RESTART FILE WRITTEN   REPORT    57                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  76
+  SIMULATE AT   570.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  57    13 AUG 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   60 TIME=  580.00  DAYS ( +10.0  DAYS REPT  1 ITS) (23-AUG-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      580.0   DAYS    (23-AUG-1983):
+ @           RESTART FILE WRITTEN   REPORT    58                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  77
+  SIMULATE AT   580.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  58    23 AUG 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   61 TIME=  590.00  DAYS ( +10.0  DAYS REPT  1 ITS) (2-SEP-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      590.0   DAYS    ( 2-SEP-1983):
+ @           RESTART FILE WRITTEN   REPORT    59                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  78
+  SIMULATE AT   590.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  59     2 SEP 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   62 TIME=  600.00  DAYS ( +10.0  DAYS REPT  1 ITS) (12-SEP-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      600.0   DAYS    (12-SEP-1983):
+ @           RESTART FILE WRITTEN   REPORT    60                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  79
+  SIMULATE AT   600.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  60    12 SEP 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   63 TIME=  610.00  DAYS ( +10.0  DAYS REPT  1 ITS) (22-SEP-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      610.0   DAYS    (22-SEP-1983):
+ @           RESTART FILE WRITTEN   REPORT    61                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  80
+  SIMULATE AT   610.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  61    22 SEP 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   64 TIME=  620.00  DAYS ( +10.0  DAYS REPT  1 ITS) (2-OCT-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      620.0   DAYS    ( 2-OCT-1983):
+ @           RESTART FILE WRITTEN   REPORT    62                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  81
+  SIMULATE AT   620.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  62     2 OCT 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   65 TIME=  630.00  DAYS ( +10.0  DAYS REPT  1 ITS) (12-OCT-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      630.0   DAYS    (12-OCT-1983):
+ @           RESTART FILE WRITTEN   REPORT    63                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  82
+  SIMULATE AT   630.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  63    12 OCT 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   66 TIME=  640.00  DAYS ( +10.0  DAYS REPT  1 ITS) (22-OCT-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      640.0   DAYS    (22-OCT-1983):
+ @           RESTART FILE WRITTEN   REPORT    64                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  83
+  SIMULATE AT   640.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  64    22 OCT 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   67 TIME=  650.00  DAYS ( +10.0  DAYS REPT  1 ITS) (1-NOV-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      650.0   DAYS    ( 1-NOV-1983):
+ @           RESTART FILE WRITTEN   REPORT    65                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  84
+  SIMULATE AT   650.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  65     1 NOV 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   68 TIME=  660.00  DAYS ( +10.0  DAYS REPT  1 ITS) (11-NOV-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      660.0   DAYS    (11-NOV-1983):
+ @           RESTART FILE WRITTEN   REPORT    66                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  85
+  SIMULATE AT   660.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  66    11 NOV 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   69 TIME=  670.00  DAYS ( +10.0  DAYS REPT  1 ITS) (21-NOV-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      670.0   DAYS    (21-NOV-1983):
+ @           RESTART FILE WRITTEN   REPORT    67                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  86
+  SIMULATE AT   670.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  67    21 NOV 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   70 TIME=  680.00  DAYS ( +10.0  DAYS REPT  1 ITS) (1-DEC-1983)           
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      680.0   DAYS    ( 1-DEC-1983):
+ @           RESTART FILE WRITTEN   REPORT    68                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  87
+  SIMULATE AT   680.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  68     1 DEC 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   71 TIME=  690.00  DAYS ( +10.0  DAYS REPT  1 ITS) (11-DEC-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      690.0   DAYS    (11-DEC-1983):
+ @           RESTART FILE WRITTEN   REPORT    69                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  88
+  SIMULATE AT   690.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  69    11 DEC 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   72 TIME=  700.00  DAYS ( +10.0  DAYS REPT  1 ITS) (21-DEC-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      700.0   DAYS    (21-DEC-1983):
+ @           RESTART FILE WRITTEN   REPORT    70                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  89
+  SIMULATE AT   700.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  70    21 DEC 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   73 TIME=  710.00  DAYS ( +10.0  DAYS REPT  1 ITS) (31-DEC-1983)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      710.0   DAYS    (31-DEC-1983):
+ @           RESTART FILE WRITTEN   REPORT    71                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  90
+  SIMULATE AT   710.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  71    31 DEC 1983   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   74 TIME=  720.00  DAYS ( +10.0  DAYS REPT  1 ITS) (10-JAN-1984)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      720.0   DAYS    (10-JAN-1984):
+ @           RESTART FILE WRITTEN   REPORT    72                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+1                             **********************************************************************  91
+  SIMULATE AT   720.00   DAYS *   SIMUALTION-PROJECT-ALL-BLOCKS-ACTIVE-STABILITY                       * ECLIPSE  VERSION 2010.1     
+  REPORT  72    10 JAN 1984   *  RUN                                                                   * RUN AT 01:51 ON 04 JUN 2023 
+                              **************************************************************************
+
+ STEP   75 TIME=  730.00  DAYS ( +10.0  DAYS REPT  1 ITS) (20-JAN-1984)          
+  PAV=  4000.5  PSIA   WCT= 0.00 GOR= 0.00000  MSCF/STB WGR= 0.00000  STB/MSCF   
+
+ @--MESSAGE  AT TIME      730.0   DAYS    (20-JAN-1984):
+ @           RESTART FILE WRITTEN   REPORT    73                             
+ @           RESTART INCLUDES WATER AND GAS PHASE PRESSURES                  
+ @                            FLUID VISCOSITIES                              
+ @                            PHASE RESERVOIR DENSITIES                      
+    40 READING END     
+
+ Error summary 
+ Comments               1
+ Warnings               7
+ Problems               0
+ Errors                 0
+ Bugs                   0
+ Final cpu       0.59 elapsed       0.59
