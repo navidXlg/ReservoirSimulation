@@ -27,18 +27,19 @@ def clcTran(Ax, Ay, Di, permi, permj):
 
 
 ### This function save special value
-def ACSAVE(X, X2, LA):
+def ACSAVE(X, LA):
     SAVEw = createMatrix(LA, 1, 0)
     SAVEo = createMatrix(LA, 1, 0)
     for i in range(LA):
-        SAVEo[i][0] = (X2[i][18] *(1- X[2*i+1][0]))/X2[i][6]
-        SAVEw[i][0] = (X2[i][18] *(X[2*i+1][0]))/X2[i][8]
+        blockRef = Block(0.1, 0.3, X[2*i][0], X[2*i+1][0])
+        SAVEo[i][0] = (blockRef.PROS() *(1- X[2*i+1][0]))/blockRef.Bo()
+        SAVEw[i][0] = (blockRef.PROS() *(X[2*i+1][0]))/blockRef.Bw()
 
     return SAVEo, SAVEw    
 
 
 ### This function clc the potential for block and its neighboure
-def PotFunction(X, LA, X2):
+def PotFunction(X, LA):
     
     ### Gravity how to eork eith potential
     ### What is the pressuer of water
@@ -52,8 +53,9 @@ def PotFunction(X, LA, X2):
     POTw = createMatrix(LA, 1, 0)
 
     for i in range(LA):
-        POTo[i][0] = round(X[2*i][0], 6) - (X2[i][14] * Z)
-        POTw[i][0] = round(X[2*i][0], 6) - X2[i][0] - (X2[i][15] * Z)  
+        refBlock = Block(0.1, 0.3,X[2*i][0], X[2*i+1][0])
+        POTo[i][0] = round(X[2*i][0], 6) - (refBlock.Roo() * Z)
+        POTw[i][0] = round(X[2*i][0], 6) - refBlock.PC() - (refBlock.Row() * Z)  
 
     return POTo, POTw
 
@@ -184,7 +186,7 @@ def plot(X):
 
 
 ######### EQU function clc the jacobin and redisule base on X2
-def EQU (X, X2, ACSAVE_o, ACSAVE_w, LA, NL, TL, dt, DX, DY, DZ):
+def EQU (X,ACSAVE_o, ACSAVE_w, LA, NL, TL, dt, DX, DY, DZ):
         
         ### Clc bulk volume for every block
         Vb = DX * DY * DZ
@@ -194,11 +196,12 @@ def EQU (X, X2, ACSAVE_o, ACSAVE_w, LA, NL, TL, dt, DX, DY, DZ):
         J = createMatrix (LA*2,LA*2,0)
 
         ### Potential Function for specifing whether block is upstrem or downstream
-        [POT_o , POT_w] = PotFunction(X, LA, X2)
+        [POT_o , POT_w] = PotFunction(X, LA)
         
         for IA in range(LA):
-            
+
             ### Structure matrix for every block to complete main matrixes
+            centerBlock = Block(0.1, 0.3, X[2*IA][0], X[2*IA+1][0])
             JB = createMatrix(2,10,0)
             FB = createMatrix(2,1,0)
 
@@ -206,53 +209,51 @@ def EQU (X, X2, ACSAVE_o, ACSAVE_w, LA, NL, TL, dt, DX, DY, DZ):
 
                 #### neighbors is active or inactive
                 if (NL[IA][n] > -1):
-
                     JA = NL[IA][n]
                     JA = JA - 1
-
-
+                    neighbourBlock = Block(0.1, 0.3, X[2*JA][0], X[2*JA+1][0])
                     ### OIl Neighbor  is Upstream
                     if (POT_o[JA][0] >= POT_o[IA][0]):
-                        JB[0][0] = JB[0][0] + TL[IA][n] * (X2[JA][4] / (X2[JA][10] * X2[JA][6])) * (-1) 
-                        JB[0][1] = JB[0][1] + 0 
-                        JB[0][2*n + 2] = TL[IA][n] * (-X2[JA][17]) * (X2[JA][4] / (X2[JA][6] * X2[JA][10])**2) * (POT_o[JA][0] - POT_o[IA][0]) + TL[IA][n] * (X2[JA][4] / (X2[JA][10] * X2[JA][6])) * (1) 
-                        JB[0][2*n + 3] = TL[IA][n] * (1 / (X2[JA][6] * X2[JA][10])) * X2[JA][5] * (POT_o[JA][0] - POT_o[IA][0])
-                        FB[0][0] += TL[IA][n] * (X2[JA][4] / (X2[JA][10] * X2[JA][6])) * (POT_o[JA][0] - POT_o[IA][0])
+                        JB[0][0] +=  TL[IA][n] * (neighbourBlock.Kro()/ (neighbourBlock.MUo() * neighbourBlock.Bo())) * (-1) 
+                        JB[0][1] += 0 
+                        JB[0][2*n + 2] = TL[IA][n] * (-neighbourBlock.dMUoBo()) * (neighbourBlock.Kro() / (neighbourBlock.MUo() * neighbourBlock.Bo())**2) * (POT_o[JA][0] - POT_o[IA][0]) + TL[IA][n] * (neighbourBlock.Kro()/ (neighbourBlock.MUo() * neighbourBlock.Bo())) * (1) 
+                        JB[0][2*n + 3] = TL[IA][n] * (1 / (neighbourBlock.Bo() * neighbourBlock.MUo())) * neighbourBlock.dKroSw() * (POT_o[JA][0] - POT_o[IA][0])
+                        FB[0][0] += TL[IA][n] * (neighbourBlock.Kro()/ (neighbourBlock.MUo() * neighbourBlock.Bo())) * (POT_o[JA][0] - POT_o[IA][0])
                     
                     ### oil Central  is Upstream
                     else:
-                        JB[0][0] = JB[0][0] + TL[IA][n] * (-X2[IA][17]) * (X2[IA][4] / (X2[IA][6] * X2[IA][10])**2) * (POT_o[JA][0] - POT_o[IA][0]) + TL[IA][n] * (X2[IA][4] / (X2[IA][6] * X2[IA][10])) * (-1) 
-                        JB[0][1] = JB[0][1] + TL[IA][n] * (1 / (X2[IA][6] * X2[IA][10])) * X2[IA][5] * (POT_o[JA][0] - POT_o[IA][0]) 
-                        JB[0][2*n + 2] = TL[IA][n] * (X2[IA][4] / (X2[IA][6] * X2[IA][10] ))
+                        JB[0][0] += TL[IA][n] * (-centerBlock.dMUoBo()) * (centerBlock.Kro()/ (centerBlock.MUo() * centerBlock.Bo())**2) * (POT_o[JA][0] - POT_o[IA][0]) + TL[IA][n] * (centerBlock.Kro() / (centerBlock.MUo() * centerBlock.Bo())) * (-1) 
+                        JB[0][1] += TL[IA][n] * (1 / (centerBlock.MUo() * centerBlock.Bo())) * centerBlock.dKroSw() * (POT_o[JA][0] - POT_o[IA][0]) 
+                        JB[0][2*n + 2] = TL[IA][n] * (centerBlock.Kro() / (centerBlock.MUo() * centerBlock.Bo()))
                         JB[0][2*n + 3] = 0
-                        FB[0][0] += TL[IA][n] * (X2[IA][4] / (X2[IA][10] * X2[IA][6])) * (POT_o[JA][0] - POT_o[IA][0])
+                        FB[0][0] += TL[IA][n] * (centerBlock.Kro() / (centerBlock.MUo() * centerBlock.Bo())) * (POT_o[JA][0] - POT_o[IA][0])
 
                     
                     ### Water Neighbor  is Upstream 
                     if (POT_w[JA] >= POT_w[IA]):
-                        JB[1][0] = JB[1][0] + TL[IA][n] * (X2[JA][2] / (X2[JA][12] * X2[JA][8])) * (-1)   
-                        JB[1][1] = JB[1][1] + TL[IA][n] * (X2[JA][2] / (X2[JA][12] * X2[JA][8])) * (X2[IA][1]) 
-                        JB[1][2*n + 2] = TL[IA][n] * (-X2[JA][16]) * (X2[JA][2] / (X2[JA][12] * X2[JA][8])**2) * (POT_w[JA][0] - POT_w[IA][0]) + TL[IA][n] * (X2[JA][2] / (X2[JA][12] * X2[JA][8])) * (1)
-                        JB[1][2*n + 3] = TL[IA][n] * (1/ (X2[JA][12] * X2[JA][8])) * X2[JA][3] * (POT_w[JA][0] - POT_w[IA][0]) + TL[IA][n] * (X2[JA][2] / (X2[JA][12] * X2[JA][8])) * (-X2[JA][1])
-                        FB[1][0] += TL[IA][n] * (X2[JA][2] / (X2[JA][12] * X2[JA][8])) * (POT_w[JA][0] - POT_w[IA][0]) 
+                        JB[1][0] += TL[IA][n] * (neighbourBlock.Krw()/ (neighbourBlock.MUw * neighbourBlock.Bw())) * (-1)   
+                        JB[1][1] +=  TL[IA][n] * (neighbourBlock.Krw()/ (neighbourBlock.MUw * neighbourBlock.Bw())) * (centerBlock.dPcSw()) 
+                        JB[1][2*n + 2] = TL[IA][n] * (-neighbourBlock.dMUwBw()) * (neighbourBlock.Krw() / (neighbourBlock.MUw * neighbourBlock.Bw())**2) * (POT_w[JA][0] - POT_w[IA][0]) + TL[IA][n] * (neighbourBlock.Krw()/ (neighbourBlock.MUw * neighbourBlock.Bw())) * (1)
+                        JB[1][2*n + 3] = TL[IA][n] * (1/ (neighbourBlock.MUw * neighbourBlock.Bw())) * neighbourBlock.dKrwSw() * (POT_w[JA][0] - POT_w[IA][0]) + TL[IA][n] * (neighbourBlock.Krw()/ (neighbourBlock.MUw * neighbourBlock.Bw())) * (-neighbourBlock.dPcSw())
+                        FB[1][0] += TL[IA][n] * (neighbourBlock.Krw()/ (neighbourBlock.MUw * neighbourBlock.Bw())) * (POT_w[JA][0] - POT_w[IA][0]) 
 
                     ### Water center is Upstream
                     else:
-                        JB[1][0] = JB[1][0] + TL[IA][n] * (X2[IA][2] / (X2[IA][12] * X2[IA][8])**2) * (-X2[IA][16]) * (POT_w[JA][0] - POT_w[IA][0]) + TL[IA][n] * (X2[IA][2] / (X2[IA][12] * X2[IA][8])) * (-1) 
-                        JB[1][1] = JB[1][1] + TL[IA][n] * (1/ (X2[IA][12] * X2[IA][8])) * X2[IA][3] * (POT_w[JA][0] - POT_w[IA][0]) + TL[IA][n] * (X2[IA][2] / (X2[IA][12] * X2[IA][8])) * (X2[IA][1]) 
-                        JB[1][2*n + 2] = TL[IA][n] * (X2[IA][2] / (X2[IA][12] * X2[IA][8])) * 1
-                        JB[1][2*n + 3] = TL[IA][n] * (X2[IA][2] / (X2[IA][12] * X2[IA][8])) * (-X2[JA][1])
-                        FB[1][0] += TL[IA][n] * (X2[IA][2] / (X2[IA][12] * X2[IA][8])) * (POT_w[JA][0] - POT_w[IA][0])
+                        JB[1][0] +=  TL[IA][n] * (centerBlock.Krw()/ (centerBlock.MUw * centerBlock.Bw())**2) * (-centerBlock.dMUwBw()) * (POT_w[JA][0] - POT_w[IA][0]) + TL[IA][n] * (centerBlock.Krw()/ (centerBlock.MUw * centerBlock.Bw())) * (-1) 
+                        JB[1][1] += TL[IA][n] * (1/(centerBlock.MUw * centerBlock.Bw())) * centerBlock.dKrwSw() * (POT_w[JA][0] - POT_w[IA][0]) + TL[IA][n] * (centerBlock.Krw()/ (centerBlock.MUw * centerBlock.Bw())) * (centerBlock.dPcSw()) 
+                        JB[1][2*n + 2] = TL[IA][n] * (centerBlock.Krw()/ (centerBlock.MUw * centerBlock.Bw())) * 1
+                        JB[1][2*n + 3] = TL[IA][n] * (centerBlock.Krw()/ (centerBlock.MUw * centerBlock.Bw())) * (-neighbourBlock.dPcSw())
+                        FB[1][0] += TL[IA][n] * (centerBlock.Krw()/ (centerBlock.MUw * centerBlock.Bw())) * (POT_w[JA][0] - POT_w[IA][0])
 
 
 
             ### Adding Accumulation term for every Block
-            JB[0][0] += - Vb/dt  / 5.615 * ((-X2[IA][7]) * (X2[IA][18]*(1-X[2*IA+1][0]) / (X2[IA][6] **2))) 
-            JB[0][1] += - Vb/dt  / 5.615 * (X2[IA][18] / X2[IA][6] * (-1)) 
-            JB[1][0] += - Vb/dt  / 5.615 * ((-X2[IA][9]) * (X2[IA][18] * X[2*IA+1][0] / X2[IA][8] **2)) 
-            JB[1][1] += - Vb/dt  / 5.615 *((X2[IA][18] / X2[IA][8]) * 1) 
-            FB[0][0] += -Vb/dt  / 5.615 * ((X2[IA][18] * (1-X[2*IA+1][0]) / X2[IA][6]) - ACSAVE_o[IA][0] ) 
-            FB[1][0] += -Vb/dt  / 5.615 *((X2[IA][18] * X[2*IA+1][0] / X2[IA][8]) - ACSAVE_w[IA][0] )
+            JB[0][0] += - Vb/dt  / 5.615 * ((-centerBlock.dBoP) * (centerBlock.PROS()*(1-X[2*IA+1][0]) / (centerBlock.Bo() **2))) 
+            JB[0][1] += - Vb/dt  / 5.615 * (centerBlock.PROS() / centerBlock.Bo() * (-1)) 
+            JB[1][0] += - Vb/dt  / 5.615 * ((-centerBlock.dBwP()) * (centerBlock.PROS() * X[2*IA+1][0] / centerBlock.Bw() **2)) 
+            JB[1][1] += - Vb/dt  / 5.615 *((centerBlock.PROS() / centerBlock.Bw()) * 1) 
+            FB[0][0] += -Vb/dt  / 5.615 * ((centerBlock.PROS() * (1-X[2*IA+1][0]) / centerBlock.Bo()) - ACSAVE_o[IA][0] ) 
+            FB[1][0] += -Vb/dt  / 5.615 *((centerBlock.PROS()* X[2*IA+1][0] / centerBlock.Bw()) - ACSAVE_w[IA][0] )
 
             ### Adding structer matrix to main matrixes
             F[2*IA][0] = FB[0][0]
@@ -275,25 +276,35 @@ def EQU (X, X2, ACSAVE_o, ACSAVE_w, LA, NL, TL, dt, DX, DY, DZ):
         return F,J
 
 
+
+
+
 ### Defing object for every block
 class Block:
 
     def __init__(self, Swc, Sor, P, Sw):
 
+
         self.Swc = Swc
         self.Sor = Sor
-        self.Sw = Sw
+
+        if ( Sw > (1-self.Sor) ):
+            self.Sw = (1-self.Sor) 
+        elif( Sw < self.Swc ):
+            self.Sw = (self.Swc)
+        else:
+            self.Sw = Sw    
+
         self.P = P
         self.dBoP = -6.0E-6
-        self.Sr = 1/(1- Swc - Sor)
-        self.Snw =  (Sw - Swc)/(1- Swc - Sor) 
+        self.Sr = 1/(1- self.Swc - self.Sor)
+        self.Snw =  (self.Sw - self.Swc)/(1- self.Swc - self.Sor) 
         self.MUw = 0.4
         self.dMUw = 0
         self.Ros = 37.457 ###Ib/ft^3
         self.RS = 1000 ###SCF/bbl
         self.Rgs = 0.06248 ### Ib/ft^3
         self.Rowref = 62.3664 ### Ib/ft^3
-
 
     def PC(self):
         return 0.34 * ((1 - self.Snw)**2) * 14.7
@@ -349,11 +360,10 @@ class Block:
         return self.Rowref / self.Bw()
     
     def dMUwBw (self):
-        return self.MUw() * self.dBwP() + self.Bw() * self.dMUw
+        return self.MUw * self.dBwP() + self.Bw() * self.dMUw
     
     def dMUoBo(self):
         return self.MUo() * self.dBoP + self.Bo() * self.dMUo()
 
     def PROS(self):
         return 0.1 * (1-0.000001*(self.P - 4000) + (((0.000001)**2)*((self.P-4000)**2))/2)  
-    

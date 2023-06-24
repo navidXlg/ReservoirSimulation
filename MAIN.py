@@ -58,11 +58,8 @@ X = solution(TA, P1, S1, P2, S2, segrgatin, segregationIA )
 ### Plot of intial condition of reservoir
 plot(X)
 
-### Clc properties for every Block befor X change
-X2 =  X2CLCS(X, Swc, Sor,  TA, PROS)
-
 ### Calling ACSAVE for next time step
-SAVE = ACSAVE(X, X2, LA)
+SAVE = ACSAVE(X, LA)
 
 
 
@@ -77,10 +74,6 @@ if segrgatin == False:
 ### Start of Simulation    
 for dt in range(10, Tmax, Tstep):
      
-
-     #### For Stability Phase we do this
-     X2 =  X2CLCS(X, Swc, Sor, LA, PROS)
-
      ### Error max  = 05
      sigma  = 0    
 
@@ -88,18 +81,14 @@ for dt in range(10, Tmax, Tstep):
      for i in range(10):
 
           # Ft,Jt = EQU(X, X2, dt ,LA, ACTNUM, IJ_IT, NL, DX, DY, DZ, PROS, TL, SAVE[1], SAVE[0]) 
-          Ft, Jt = EQU(X, X2, SAVE[0] , SAVE[1] ,LA ,NL ,TL , dt, DX, DY, DZ)
+          Ft, Jt = EQU(X,SAVE[0] , SAVE[1] ,LA ,NL ,TL , dt, DX, DY, DZ)
           X = X - np.dot(np.linalg.inv(Jt), Ft)  #### Zarb matrix how to do it this x will replace initial guess 
-          X2 =  X2CLCS(X, Swc, Sor, LA, PROS) 
-
 
           ### Clc the error for this NR
           for I in range (2*LA):
             sigma = sigma +abs(Xo[I][0] - X[I][0]) / Xo[I][0]
-          
           Error = 1/(LA*2) * sigma  
 
-         
           ### updating Xo
           for IX in range (2*LA):
              Xo[i][0] = X[i][0]
@@ -115,12 +104,12 @@ for dt in range(10, Tmax, Tstep):
      print(dt)
      
      ### Plot for some time scales
-     tShow = [10, 100, 200, 300, 400, 500, 600, 700, 730]
-     if dt in tShow:
-         plot(X)
+     # tShow = [10, 100, 200, 300, 400, 500, 600, 700, 730]
+     # if dt in tShow:
+     plot(X)
 
      ### Calling ACSAVE for next time step
-     SAVE = ACSAVE(X, X2, LA)
+     SAVE = ACSAVE(X,LA)
      
           
 
